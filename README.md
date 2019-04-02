@@ -1,2 +1,2 @@
 # css-grid
-fundematal css grid
+Fundamentals css grid
