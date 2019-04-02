@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>intro css grid</title>
+
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-gap: 40px;
+        }
+
+        body header {
+            grid-area: 1/1 / 2/5
+        }
+
+        body main {
+            grid-area: 2/1 /3/3;
+        }
+        div.sidebar {
+            grid-area: 2/3/4/4;
+        }
+        footer {
+            grid-area: 3/1/4/4;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pine Trees are Tall</h1>
+    </header>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam voluptatem labore, explicabo molestiae maxime facilis molestias corporis, 
+            eveniet veniam modi! Ducimus ut recusandae sed cum natus veritatis mollitia voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam voluptatem labore, explicabo molestiae maxime facilis molestias corporis, 
+            eveniet veniam modi! Ducimus ut recusandae sed cum natus veritatis mollitia voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam voluptatem labore, explicabo molestiae maxime facilis molestias corporis, 
+            eveniet veniam modi! Ducimus ut recusandae sed cum natus veritatis mollitia voluptas?
+        </p>
+    </main>
+    <div class="sidebar">
+        <ul>
+            <li> item 1</li>
+        </ul>
+        <ul>
+            <li> item 2</li>
+        </ul>
+        <ul>
+            <li> item 3</li>
+        </ul>
+    </div>
+    <footer>
+        Hope you enjoyed this page 
+    </footer>
+
+</body>
+</html>
